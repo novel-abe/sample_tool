@@ -1,0 +1,74 @@
+{
+  "name": "sample_tool",
+  "version": "1.0.0",
+  "description": "Front-end application for sample_tool",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack && eslint resources --ext .js --ext .jsx ; exit 0",
+    "lint": "eslint resources --ext .js --ext .jsx ; exit 0",
+    "start": "webpack-dev-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/novel-jp/sample_tool.git"
+  },
+  "author": "novel",
+  "devDependencies": {
+    "@babel/core": "^7.2.2",
+    "@babel/plugin-proposal-class-properties": "^7.3.0",
+    "@babel/preset-env": "^7.3.1",
+    "@babel/preset-react": "^7.0.0",
+    "axios": "^0.18.0",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^8.0.5",
+    "eslint": "^5.13.0",
+    "eslint-config-google": "^0.11.0",
+    "eslint-plugin-react": "^7.12.4",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "flat": "^4.1.0",
+    "immutability-helper": "^2.9.1",
+    "loader": "^2.1.1",
+    "lodash": "^4.17.10",
+    "moment": "^2.24.0",
+    "prop-types": "^15.6.2",
+    "react": "^16.8.2",
+    "react-big-scheduler": "^0.2.5",
+    "react-datepicker": "^1.8.0",
+    "react-dnd": "^5.0.0",
+    "react-dnd-html5-backend": "^5.0.1",
+    "react-dom": "^16.4.2",
+    "react-hot-loader": "^4.6.5",
+    "react-localization": "^1.0.13",
+    "react-redux": "^5.1.1",
+    "react-select": "^2.3.0",
+    "redux": "^4.0.1",
+    "style-loader": "^0.22.1",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.2.3",
+    "webpack-dev-server": "^3.1.14",
+    "write-file-webpack-plugin": "^4.5.0"
+  },
+  "dependencies": {
+    "antd": "^3.13.2",
+    "bourbon": "^5.1.0",
+    "bourbon-neat": "^3.0.1",
+    "css-loader": "^1.0.1",
+    "global": "^4.3.2",
+    "node-sass": "^4.11.0",
+    "normalize.css": "^8.0.1",
+    "react-bootstrap": "^1.0.0-beta.5",
+    "react-bs-notifier": "^5.0.0",
+    "sass-loader": "^7.1.0",
+    "webpack-merge": "^4.2.1",
+    "xlsx": "^0.14.1"
+  },
+  "bugs": {
+    "url": "https://github.com/novel-jp/sample_tool/issues"
+  },
+  "homepage": "https://github.com/novel-jp/sample_tool#readme",
+  "main": "webpack.config.js",
+  "directories": {
+    "test": "test"
+  },
+  "license": "ISC"
+}

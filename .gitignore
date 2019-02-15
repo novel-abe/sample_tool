@@ -1,0 +1,16 @@
+logs
+target
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/RUNNING_PID
+project/project
+project/target
+tmp
+node_modules/
+public/build/
+package-lock.json
+bin
+sample_tool

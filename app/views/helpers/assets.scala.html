@@ -1,0 +1,23 @@
+@import play.api.Play
+
+@*
+ * Assets Helper
+ *
+ * Helper view to handle referencing asset bundles from Webpack.
+ * In development, Javascript and CSS files are served from
+ * webpack-dev-server. In production, all files are served from the public
+ * build folder.
+ *
+ * @param path the path of the file to include (not including 'scripts/'
+ *             or 'styles/' e.g. 'bundle.js' not 'scripts/bundle.js')
+ *@
+@(path: String)
+
+@* If we are inserting JS... *@
+@if(path.matches("(.+)(\\.js)$")) {
+  @*
+   * If in dev mode, serve the assets from Webpack (webpack-dev-server),
+   * otherwise serve the assets from the build folder.
+   *@
+    <script src="@routes.Assets.versioned("/public", "build/scripts/" + path)" type="text/javascript"></script>
+}

@@ -1,0 +1,14 @@
+{
+    "extends": "google",
+    "plugins": [
+        "react"
+    ],
+    "parser": "babel-eslint",
+    "rules": {
+        "react/jsx-uses-vars": 1,
+        "require-jsdoc": 0,
+        "indent": ["error", 4],
+        "max-len": 0,
+        "no-invalid-this": 0
+    }
+}
